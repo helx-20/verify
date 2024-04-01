@@ -55,7 +55,7 @@ def define_critical_set_net(model, input_dim, output_dim, m_tokens_in, m_tokens_
     if model == 'transformer':
         bert_cfg = Config() 
         bert_cfg.dim = h_dim
-        bert_cfg.n_layers = 6
+        bert_cfg.n_layers = 4
         bert_cfg.n_heads = 4
         bert_cfg.max_len = m_tokens_in
         Backbone = Transformer(input_dim=M.output_dim, output_dim=transformer_out_feature_dim, m_tokens=m_tokens_in, cfg=bert_cfg)

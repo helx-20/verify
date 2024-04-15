@@ -1,0 +1,2421 @@
+model established
+Critical_Net(
+  (M_V): PositionalMapping()
+  (M_C): PositionalMapping()
+  (Backbone_C): Transformer(
+    (in_net): Linear(in_features=2907, out_features=256, bias=True)
+    (blocks): ModuleList(
+      (0-3): 4 x Block(
+        (attn): MultiHeadedSelfAttention(
+          (proj_q): Linear(in_features=256, out_features=256, bias=True)
+          (proj_k): Linear(in_features=256, out_features=256, bias=True)
+          (proj_v): Linear(in_features=256, out_features=256, bias=True)
+          (drop): Dropout(p=0, inplace=False)
+        )
+        (proj): Linear(in_features=256, out_features=256, bias=True)
+        (norm1): LayerNorm()
+        (pwff): PositionWiseFeedForward(
+          (fc1): Linear(in_features=256, out_features=512, bias=True)
+          (fc2): Linear(in_features=512, out_features=256, bias=True)
+        )
+        (norm2): LayerNorm()
+        (drop): Dropout(p=0, inplace=False)
+      )
+    )
+    (out_net): Linear(in_features=256, out_features=20, bias=True)
+  )
+  (Backbone_V): Transformer(
+    (in_net): Linear(in_features=65, out_features=256, bias=True)
+    (blocks): ModuleList(
+      (0-3): 4 x Block(
+        (attn): MultiHeadedSelfAttention(
+          (proj_q): Linear(in_features=256, out_features=256, bias=True)
+          (proj_k): Linear(in_features=256, out_features=256, bias=True)
+          (proj_v): Linear(in_features=256, out_features=256, bias=True)
+          (drop): Dropout(p=0, inplace=False)
+        )
+        (proj): Linear(in_features=256, out_features=256, bias=True)
+        (norm1): LayerNorm()
+        (pwff): PositionWiseFeedForward(
+          (fc1): Linear(in_features=256, out_features=512, bias=True)
+          (fc2): Linear(in_features=512, out_features=256, bias=True)
+        )
+        (norm2): LayerNorm()
+        (drop): Dropout(p=0, inplace=False)
+      )
+    )
+    (out_net): Linear(in_features=256, out_features=32, bias=True)
+  )
+  (fc): Linear(in_features=5248, out_features=128, bias=True)
+  (out_net): Linear(in_features=128, out_features=2, bias=True)
+)
+Epoch 0 begin
+
+Test set: Epoch: 0, Average loss: 0.00016774
+
+save
+min_loss: 0.0001677350771843574
+Epoch 1 begin
+
+Test set: Epoch: 1, Average loss: 0.00014348
+
+save
+min_loss: 0.00014347895903718826
+Epoch 2 begin
+
+Test set: Epoch: 2, Average loss: 0.00010662
+
+save
+min_loss: 0.00010662243727319435
+Epoch 3 begin
+
+Test set: Epoch: 3, Average loss: 0.00010863
+
+min_loss: 0.00010662243727319435
+Epoch 4 begin
+
+Test set: Epoch: 4, Average loss: 0.00013264
+
+min_loss: 0.00010662243727319435
+Epoch 5 begin
+
+Test set: Epoch: 5, Average loss: 0.00008784
+
+save
+min_loss: 8.783983885000028e-05
+Epoch 6 begin
+
+Test set: Epoch: 6, Average loss: 0.00008871
+
+min_loss: 8.783983885000028e-05
+Epoch 7 begin
+
+Test set: Epoch: 7, Average loss: 0.00008692
+
+save
+min_loss: 8.692186077532834e-05
+Epoch 8 begin
+
+Test set: Epoch: 8, Average loss: 0.00008694
+
+min_loss: 8.692186077532834e-05
+Epoch 9 begin
+
+Test set: Epoch: 9, Average loss: 0.00008535
+
+save
+min_loss: 8.535433703596348e-05
+Epoch 10 begin
+
+Test set: Epoch: 10, Average loss: 0.00007944
+
+save
+min_loss: 7.943911785059431e-05
+Epoch 11 begin
+
+Test set: Epoch: 11, Average loss: 0.00007909
+
+save
+min_loss: 7.908859176757525e-05
+Epoch 12 begin
+
+Test set: Epoch: 12, Average loss: 0.00009241
+
+min_loss: 7.908859176757525e-05
+Epoch 13 begin
+
+Test set: Epoch: 13, Average loss: 0.00007237
+
+save
+min_loss: 7.237335869851248e-05
+Epoch 14 begin
+
+Test set: Epoch: 14, Average loss: 0.00007566
+
+min_loss: 7.237335869851248e-05
+Epoch 15 begin
+
+Test set: Epoch: 15, Average loss: 0.00007466
+
+min_loss: 7.237335869851248e-05
+Epoch 16 begin
+
+Test set: Epoch: 16, Average loss: 0.00006782
+
+save
+min_loss: 6.782103254825966e-05
+Epoch 17 begin
+
+Test set: Epoch: 17, Average loss: 0.00006442
+
+save
+min_loss: 6.441764467908453e-05
+Epoch 18 begin
+
+Test set: Epoch: 18, Average loss: 0.00006923
+
+min_loss: 6.441764467908453e-05
+Epoch 19 begin
+
+Test set: Epoch: 19, Average loss: 0.00006279
+
+save
+min_loss: 6.279098103148835e-05
+Epoch 20 begin
+
+Test set: Epoch: 20, Average loss: 0.00006353
+
+min_loss: 6.279098103148835e-05
+Epoch 21 begin
+
+Test set: Epoch: 21, Average loss: 0.00005811
+
+save
+min_loss: 5.81093533682855e-05
+Epoch 22 begin
+
+Test set: Epoch: 22, Average loss: 0.00004626
+
+save
+min_loss: 4.6259931352603294e-05
+Epoch 23 begin
+
+Test set: Epoch: 23, Average loss: 0.00004944
+
+min_loss: 4.6259931352603294e-05
+Epoch 24 begin
+
+Test set: Epoch: 24, Average loss: 0.00004859
+
+min_loss: 4.6259931352603294e-05
+Epoch 25 begin
+
+Test set: Epoch: 25, Average loss: 0.00004636
+
+min_loss: 4.6259931352603294e-05
+Epoch 26 begin
+
+Test set: Epoch: 26, Average loss: 0.00003824
+
+save
+min_loss: 3.824052104817574e-05
+Epoch 27 begin
+
+Test set: Epoch: 27, Average loss: 0.00005242
+
+min_loss: 3.824052104817574e-05
+Epoch 28 begin
+
+Test set: Epoch: 28, Average loss: 0.00003970
+
+min_loss: 3.824052104817574e-05
+Epoch 29 begin
+
+Test set: Epoch: 29, Average loss: 0.00003738
+
+save
+min_loss: 3.737888515439937e-05
+Epoch 30 begin
+
+Test set: Epoch: 30, Average loss: 0.00004065
+
+min_loss: 3.737888515439937e-05
+Epoch 31 begin
+
+Test set: Epoch: 31, Average loss: 0.00004045
+
+min_loss: 3.737888515439937e-05
+Epoch 32 begin
+
+Test set: Epoch: 32, Average loss: 0.00004312
+
+min_loss: 3.737888515439937e-05
+Epoch 33 begin
+
+Test set: Epoch: 33, Average loss: 0.00004340
+
+min_loss: 3.737888515439937e-05
+Epoch 34 begin
+
+Test set: Epoch: 34, Average loss: 0.00003980
+
+min_loss: 3.737888515439937e-05
+Epoch 35 begin
+
+Test set: Epoch: 35, Average loss: 0.00003982
+
+min_loss: 3.737888515439937e-05
+Epoch 36 begin
+
+Test set: Epoch: 36, Average loss: 0.00003982
+
+min_loss: 3.737888515439937e-05
+Epoch 37 begin
+
+Test set: Epoch: 37, Average loss: 0.00003905
+
+min_loss: 3.737888515439937e-05
+Epoch 38 begin
+
+Test set: Epoch: 38, Average loss: 0.00003518
+
+save
+min_loss: 3.5184333612404094e-05
+Epoch 39 begin
+
+Test set: Epoch: 39, Average loss: 0.00003493
+
+save
+min_loss: 3.4925701631428415e-05
+Epoch 40 begin
+
+Test set: Epoch: 40, Average loss: 0.00003252
+
+save
+min_loss: 3.2519752053414706e-05
+Epoch 41 begin
+
+Test set: Epoch: 41, Average loss: 0.00004184
+
+min_loss: 3.2519752053414706e-05
+Epoch 42 begin
+
+Test set: Epoch: 42, Average loss: 0.00003870
+
+min_loss: 3.2519752053414706e-05
+Epoch 43 begin
+
+Test set: Epoch: 43, Average loss: 0.00003764
+
+min_loss: 3.2519752053414706e-05
+Epoch 44 begin
+
+Test set: Epoch: 44, Average loss: 0.00003822
+
+min_loss: 3.2519752053414706e-05
+Epoch 45 begin
+
+Test set: Epoch: 45, Average loss: 0.00003265
+
+min_loss: 3.2519752053414706e-05
+Epoch 46 begin
+
+Test set: Epoch: 46, Average loss: 0.00003189
+
+save
+min_loss: 3.188914029460639e-05
+Epoch 47 begin
+
+Test set: Epoch: 47, Average loss: 0.00003172
+
+save
+min_loss: 3.172093703113085e-05
+Epoch 48 begin
+
+Test set: Epoch: 48, Average loss: 0.00004074
+
+min_loss: 3.172093703113085e-05
+Epoch 49 begin
+
+Test set: Epoch: 49, Average loss: 0.00003874
+
+min_loss: 3.172093703113085e-05
+Epoch 50 begin
+
+Test set: Epoch: 50, Average loss: 0.00003431
+
+min_loss: 3.172093703113085e-05
+Epoch 51 begin
+
+Test set: Epoch: 51, Average loss: 0.00002879
+
+save
+min_loss: 2.879299399033264e-05
+Epoch 52 begin
+
+Test set: Epoch: 52, Average loss: 0.00003664
+
+min_loss: 2.879299399033264e-05
+Epoch 53 begin
+
+Test set: Epoch: 53, Average loss: 0.00003503
+
+min_loss: 2.879299399033264e-05
+Epoch 54 begin
+
+Test set: Epoch: 54, Average loss: 0.00003023
+
+min_loss: 2.879299399033264e-05
+Epoch 55 begin
+
+Test set: Epoch: 55, Average loss: 0.00003320
+
+min_loss: 2.879299399033264e-05
+Epoch 56 begin
+
+Test set: Epoch: 56, Average loss: 0.00003763
+
+min_loss: 2.879299399033264e-05
+Epoch 57 begin
+
+Test set: Epoch: 57, Average loss: 0.00003320
+
+min_loss: 2.879299399033264e-05
+Epoch 58 begin
+
+Test set: Epoch: 58, Average loss: 0.00003062
+
+min_loss: 2.879299399033264e-05
+Epoch 59 begin
+
+Test set: Epoch: 59, Average loss: 0.00002878
+
+save
+min_loss: 2.8782037723220435e-05
+Epoch 60 begin
+
+Test set: Epoch: 60, Average loss: 0.00003488
+
+min_loss: 2.8782037723220435e-05
+Epoch 61 begin
+
+Test set: Epoch: 61, Average loss: 0.00002636
+
+save
+min_loss: 2.6359481787772393e-05
+Epoch 62 begin
+
+Test set: Epoch: 62, Average loss: 0.00003434
+
+min_loss: 2.6359481787772393e-05
+Epoch 63 begin
+
+Test set: Epoch: 63, Average loss: 0.00003284
+
+min_loss: 2.6359481787772393e-05
+Epoch 64 begin
+
+Test set: Epoch: 64, Average loss: 0.00002928
+
+min_loss: 2.6359481787772393e-05
+Epoch 65 begin
+
+Test set: Epoch: 65, Average loss: 0.00003101
+
+min_loss: 2.6359481787772393e-05
+Epoch 66 begin
+
+Test set: Epoch: 66, Average loss: 0.00002828
+
+min_loss: 2.6359481787772393e-05
+Epoch 67 begin
+
+Test set: Epoch: 67, Average loss: 0.00003768
+
+min_loss: 2.6359481787772393e-05
+Epoch 68 begin
+
+Test set: Epoch: 68, Average loss: 0.00003117
+
+min_loss: 2.6359481787772393e-05
+Epoch 69 begin
+
+Test set: Epoch: 69, Average loss: 0.00003660
+
+min_loss: 2.6359481787772393e-05
+Epoch 70 begin
+
+Test set: Epoch: 70, Average loss: 0.00003184
+
+min_loss: 2.6359481787772393e-05
+Epoch 71 begin
+
+Test set: Epoch: 71, Average loss: 0.00002353
+
+save
+min_loss: 2.353195250861447e-05
+Epoch 72 begin
+
+Test set: Epoch: 72, Average loss: 0.00003048
+
+min_loss: 2.353195250861447e-05
+Epoch 73 begin
+
+Test set: Epoch: 73, Average loss: 0.00002925
+
+min_loss: 2.353195250861447e-05
+Epoch 74 begin
+
+Test set: Epoch: 74, Average loss: 0.00002441
+
+min_loss: 2.353195250861447e-05
+Epoch 75 begin
+
+Test set: Epoch: 75, Average loss: 0.00002779
+
+min_loss: 2.353195250861447e-05
+Epoch 76 begin
+
+Test set: Epoch: 76, Average loss: 0.00002983
+
+min_loss: 2.353195250861447e-05
+Epoch 77 begin
+
+Test set: Epoch: 77, Average loss: 0.00002614
+
+min_loss: 2.353195250861447e-05
+Epoch 78 begin
+
+Test set: Epoch: 78, Average loss: 0.00002638
+
+min_loss: 2.353195250861447e-05
+Epoch 79 begin
+
+Test set: Epoch: 79, Average loss: 0.00002642
+
+min_loss: 2.353195250861447e-05
+Epoch 80 begin
+
+Test set: Epoch: 80, Average loss: 0.00002742
+
+min_loss: 2.353195250861447e-05
+Epoch 81 begin
+
+Test set: Epoch: 81, Average loss: 0.00003216
+
+min_loss: 2.353195250861447e-05
+Epoch 82 begin
+
+Test set: Epoch: 82, Average loss: 0.00003565
+
+min_loss: 2.353195250861447e-05
+Epoch 83 begin
+
+Test set: Epoch: 83, Average loss: 0.00002809
+
+min_loss: 2.353195250861447e-05
+Epoch 84 begin
+
+Test set: Epoch: 84, Average loss: 0.00003090
+
+min_loss: 2.353195250861447e-05
+Epoch 85 begin
+
+Test set: Epoch: 85, Average loss: 0.00003116
+
+min_loss: 2.353195250861447e-05
+Epoch 86 begin
+
+Test set: Epoch: 86, Average loss: 0.00002539
+
+min_loss: 2.353195250861447e-05
+Epoch 87 begin
+
+Test set: Epoch: 87, Average loss: 0.00002478
+
+min_loss: 2.353195250861447e-05
+Epoch 88 begin
+
+Test set: Epoch: 88, Average loss: 0.00002685
+
+min_loss: 2.353195250861447e-05
+Epoch 89 begin
+
+Test set: Epoch: 89, Average loss: 0.00002579
+
+min_loss: 2.353195250861447e-05
+Epoch 90 begin
+
+Test set: Epoch: 90, Average loss: 0.00002692
+
+min_loss: 2.353195250861447e-05
+Epoch 91 begin
+
+Test set: Epoch: 91, Average loss: 0.00002746
+
+min_loss: 2.353195250861447e-05
+Epoch 92 begin
+
+Test set: Epoch: 92, Average loss: 0.00002723
+
+min_loss: 2.353195250861447e-05
+Epoch 93 begin
+
+Test set: Epoch: 93, Average loss: 0.00002834
+
+min_loss: 2.353195250861447e-05
+Epoch 94 begin
+
+Test set: Epoch: 94, Average loss: 0.00002897
+
+min_loss: 2.353195250861447e-05
+Epoch 95 begin
+
+Test set: Epoch: 95, Average loss: 0.00002447
+
+min_loss: 2.353195250861447e-05
+Epoch 96 begin
+
+Test set: Epoch: 96, Average loss: 0.00002250
+
+save
+min_loss: 2.2497887699165184e-05
+Epoch 97 begin
+
+Test set: Epoch: 97, Average loss: 0.00002509
+
+min_loss: 2.2497887699165184e-05
+Epoch 98 begin
+
+Test set: Epoch: 98, Average loss: 0.00002666
+
+min_loss: 2.2497887699165184e-05
+Epoch 99 begin
+
+Test set: Epoch: 99, Average loss: 0.00002738
+
+min_loss: 2.2497887699165184e-05
+Epoch 100 begin
+
+Test set: Epoch: 100, Average loss: 0.00002428
+
+min_loss: 2.2497887699165184e-05
+Epoch 101 begin
+
+Test set: Epoch: 101, Average loss: 0.00002708
+
+min_loss: 2.2497887699165184e-05
+Epoch 102 begin
+
+Test set: Epoch: 102, Average loss: 0.00002862
+
+min_loss: 2.2497887699165184e-05
+Epoch 103 begin
+
+Test set: Epoch: 103, Average loss: 0.00002754
+
+min_loss: 2.2497887699165184e-05
+Epoch 104 begin
+
+Test set: Epoch: 104, Average loss: 0.00002441
+
+min_loss: 2.2497887699165184e-05
+Epoch 105 begin
+
+Test set: Epoch: 105, Average loss: 0.00002341
+
+min_loss: 2.2497887699165184e-05
+Epoch 106 begin
+
+Test set: Epoch: 106, Average loss: 0.00002318
+
+min_loss: 2.2497887699165184e-05
+Epoch 107 begin
+
+Test set: Epoch: 107, Average loss: 0.00002225
+
+save
+min_loss: 2.2247366338073733e-05
+Epoch 108 begin
+
+Test set: Epoch: 108, Average loss: 0.00002577
+
+min_loss: 2.2247366338073733e-05
+Epoch 109 begin
+
+Test set: Epoch: 109, Average loss: 0.00002627
+
+min_loss: 2.2247366338073733e-05
+Epoch 110 begin
+
+Test set: Epoch: 110, Average loss: 0.00002707
+
+min_loss: 2.2247366338073733e-05
+Epoch 111 begin
+
+Test set: Epoch: 111, Average loss: 0.00002401
+
+min_loss: 2.2247366338073733e-05
+Epoch 112 begin
+
+Test set: Epoch: 112, Average loss: 0.00002319
+
+min_loss: 2.2247366338073733e-05
+Epoch 113 begin
+
+Test set: Epoch: 113, Average loss: 0.00002453
+
+min_loss: 2.2247366338073733e-05
+Epoch 114 begin
+
+Test set: Epoch: 114, Average loss: 0.00002577
+
+min_loss: 2.2247366338073733e-05
+Epoch 115 begin
+
+Test set: Epoch: 115, Average loss: 0.00002091
+
+save
+min_loss: 2.09124361594161e-05
+Epoch 116 begin
+
+Test set: Epoch: 116, Average loss: 0.00002115
+
+min_loss: 2.09124361594161e-05
+Epoch 117 begin
+
+Test set: Epoch: 117, Average loss: 0.00002329
+
+min_loss: 2.09124361594161e-05
+Epoch 118 begin
+
+Test set: Epoch: 118, Average loss: 0.00002128
+
+min_loss: 2.09124361594161e-05
+Epoch 119 begin
+
+Test set: Epoch: 119, Average loss: 0.00002358
+
+min_loss: 2.09124361594161e-05
+Epoch 120 begin
+
+Test set: Epoch: 120, Average loss: 0.00002671
+
+min_loss: 2.09124361594161e-05
+Epoch 121 begin
+
+Test set: Epoch: 121, Average loss: 0.00002215
+
+min_loss: 2.09124361594161e-05
+Epoch 122 begin
+
+Test set: Epoch: 122, Average loss: 0.00002725
+
+min_loss: 2.09124361594161e-05
+Epoch 123 begin
+
+Test set: Epoch: 123, Average loss: 0.00002300
+
+min_loss: 2.09124361594161e-05
+Epoch 124 begin
+
+Test set: Epoch: 124, Average loss: 0.00001971
+
+save
+min_loss: 1.9713239552989874e-05
+Epoch 125 begin
+
+Test set: Epoch: 125, Average loss: 0.00002106
+
+min_loss: 1.9713239552989874e-05
+Epoch 126 begin
+
+Test set: Epoch: 126, Average loss: 0.00002278
+
+min_loss: 1.9713239552989874e-05
+Epoch 127 begin
+
+Test set: Epoch: 127, Average loss: 0.00002618
+
+min_loss: 1.9713239552989874e-05
+Epoch 128 begin
+
+Test set: Epoch: 128, Average loss: 0.00002089
+
+min_loss: 1.9713239552989874e-05
+Epoch 129 begin
+
+Test set: Epoch: 129, Average loss: 0.00002240
+
+min_loss: 1.9713239552989874e-05
+Epoch 130 begin
+
+Test set: Epoch: 130, Average loss: 0.00002440
+
+min_loss: 1.9713239552989874e-05
+Epoch 131 begin
+
+Test set: Epoch: 131, Average loss: 0.00002561
+
+min_loss: 1.9713239552989874e-05
+Epoch 132 begin
+
+Test set: Epoch: 132, Average loss: 0.00002006
+
+min_loss: 1.9713239552989874e-05
+Epoch 133 begin
+
+Test set: Epoch: 133, Average loss: 0.00001947
+
+save
+min_loss: 1.9471226254305337e-05
+Epoch 134 begin
+
+Test set: Epoch: 134, Average loss: 0.00002211
+
+min_loss: 1.9471226254305337e-05
+Epoch 135 begin
+
+Test set: Epoch: 135, Average loss: 0.00002134
+
+min_loss: 1.9471226254305337e-05
+Epoch 136 begin
+
+Test set: Epoch: 136, Average loss: 0.00002522
+
+min_loss: 1.9471226254305337e-05
+Epoch 137 begin
+
+Test set: Epoch: 137, Average loss: 0.00001969
+
+min_loss: 1.9471226254305337e-05
+Epoch 138 begin
+
+Test set: Epoch: 138, Average loss: 0.00002037
+
+min_loss: 1.9471226254305337e-05
+Epoch 139 begin
+
+Test set: Epoch: 139, Average loss: 0.00002723
+
+min_loss: 1.9471226254305337e-05
+Epoch 140 begin
+
+Test set: Epoch: 140, Average loss: 0.00002053
+
+min_loss: 1.9471226254305337e-05
+Epoch 141 begin
+
+Test set: Epoch: 141, Average loss: 0.00002199
+
+min_loss: 1.9471226254305337e-05
+Epoch 142 begin
+
+Test set: Epoch: 142, Average loss: 0.00002310
+
+min_loss: 1.9471226254305337e-05
+Epoch 143 begin
+
+Test set: Epoch: 143, Average loss: 0.00002257
+
+min_loss: 1.9471226254305337e-05
+Epoch 144 begin
+
+Test set: Epoch: 144, Average loss: 0.00002156
+
+min_loss: 1.9471226254305337e-05
+Epoch 145 begin
+
+Test set: Epoch: 145, Average loss: 0.00002266
+
+min_loss: 1.9471226254305337e-05
+Epoch 146 begin
+
+Test set: Epoch: 146, Average loss: 0.00002006
+
+min_loss: 1.9471226254305337e-05
+Epoch 0 begin
+
+Test set: Epoch: 0, Average loss: 0.00002037
+
+save
+min_loss: 2.0365378879953977e-05
+Epoch 1 begin
+
+Test set: Epoch: 1, Average loss: 0.00001820
+
+save
+min_loss: 1.820311715906011e-05
+Epoch 2 begin
+
+Test set: Epoch: 2, Average loss: 0.00001847
+
+min_loss: 1.820311715906011e-05
+Epoch 3 begin
+
+Test set: Epoch: 3, Average loss: 0.00002249
+
+min_loss: 1.820311715906011e-05
+Epoch 4 begin
+
+Test set: Epoch: 4, Average loss: 0.00001780
+
+save
+min_loss: 1.780388822948424e-05
+Epoch 5 begin
+
+Test set: Epoch: 5, Average loss: 0.00002099
+
+min_loss: 1.780388822948424e-05
+Epoch 6 begin
+
+Test set: Epoch: 6, Average loss: 0.00002175
+
+min_loss: 1.780388822948424e-05
+Epoch 7 begin
+
+Test set: Epoch: 7, Average loss: 0.00001882
+
+min_loss: 1.780388822948424e-05
+Epoch 8 begin
+
+Test set: Epoch: 8, Average loss: 0.00002259
+
+min_loss: 1.780388822948424e-05
+Epoch 9 begin
+
+Test set: Epoch: 9, Average loss: 0.00002053
+
+min_loss: 1.780388822948424e-05
+Epoch 10 begin
+
+Test set: Epoch: 10, Average loss: 0.00001884
+
+min_loss: 1.780388822948424e-05
+Epoch 11 begin
+
+Test set: Epoch: 11, Average loss: 0.00001992
+
+min_loss: 1.780388822948424e-05
+Epoch 12 begin
+
+Test set: Epoch: 12, Average loss: 0.00001722
+
+save
+min_loss: 1.7219548364295025e-05
+Epoch 13 begin
+
+Test set: Epoch: 13, Average loss: 0.00001916
+
+min_loss: 1.7219548364295025e-05
+Epoch 14 begin
+
+Test set: Epoch: 14, Average loss: 0.00002036
+
+min_loss: 1.7219548364295025e-05
+Epoch 15 begin
+
+Test set: Epoch: 15, Average loss: 0.00002191
+
+min_loss: 1.7219548364295025e-05
+Epoch 16 begin
+
+Test set: Epoch: 16, Average loss: 0.00002085
+
+min_loss: 1.7219548364295025e-05
+Epoch 17 begin
+
+Test set: Epoch: 17, Average loss: 0.00001573
+
+save
+min_loss: 1.5726661145632285e-05
+Epoch 18 begin
+
+Test set: Epoch: 18, Average loss: 0.00001942
+
+min_loss: 1.5726661145632285e-05
+Epoch 19 begin
+
+Test set: Epoch: 19, Average loss: 0.00001719
+
+min_loss: 1.5726661145632285e-05
+Epoch 20 begin
+
+Test set: Epoch: 20, Average loss: 0.00002207
+
+min_loss: 1.5726661145632285e-05
+Epoch 21 begin
+
+Test set: Epoch: 21, Average loss: 0.00002341
+
+min_loss: 1.5726661145632285e-05
+Epoch 22 begin
+
+Test set: Epoch: 22, Average loss: 0.00001735
+
+min_loss: 1.5726661145632285e-05
+Epoch 23 begin
+
+Test set: Epoch: 23, Average loss: 0.00001939
+
+min_loss: 1.5726661145632285e-05
+Epoch 24 begin
+
+Test set: Epoch: 24, Average loss: 0.00002172
+
+min_loss: 1.5726661145632285e-05
+Epoch 25 begin
+
+Test set: Epoch: 25, Average loss: 0.00001976
+
+min_loss: 1.5726661145632285e-05
+Epoch 26 begin
+
+Test set: Epoch: 26, Average loss: 0.00002028
+
+min_loss: 1.5726661145632285e-05
+Epoch 27 begin
+
+Test set: Epoch: 27, Average loss: 0.00001709
+
+min_loss: 1.5726661145632285e-05
+Epoch 28 begin
+
+Test set: Epoch: 28, Average loss: 0.00002072
+
+min_loss: 1.5726661145632285e-05
+Epoch 29 begin
+
+Test set: Epoch: 29, Average loss: 0.00001548
+
+save
+min_loss: 1.547681684819984e-05
+Epoch 30 begin
+
+Test set: Epoch: 30, Average loss: 0.00001755
+
+min_loss: 1.547681684819984e-05
+Epoch 31 begin
+
+Test set: Epoch: 31, Average loss: 0.00001854
+
+min_loss: 1.547681684819984e-05
+Epoch 32 begin
+
+Test set: Epoch: 32, Average loss: 0.00001806
+
+min_loss: 1.547681684819984e-05
+Epoch 33 begin
+
+Test set: Epoch: 33, Average loss: 0.00002098
+
+min_loss: 1.547681684819984e-05
+Epoch 34 begin
+
+Test set: Epoch: 34, Average loss: 0.00002061
+
+min_loss: 1.547681684819984e-05
+Epoch 35 begin
+
+Test set: Epoch: 35, Average loss: 0.00002330
+
+min_loss: 1.547681684819984e-05
+Epoch 36 begin
+
+Test set: Epoch: 36, Average loss: 0.00001593
+
+min_loss: 1.547681684819984e-05
+Epoch 37 begin
+
+Test set: Epoch: 37, Average loss: 0.00001742
+
+min_loss: 1.547681684819984e-05
+Epoch 38 begin
+
+Test set: Epoch: 38, Average loss: 0.00001826
+
+min_loss: 1.547681684819984e-05
+Epoch 39 begin
+
+Test set: Epoch: 39, Average loss: 0.00001809
+
+min_loss: 1.547681684819984e-05
+Epoch 40 begin
+
+Test set: Epoch: 40, Average loss: 0.00001629
+
+min_loss: 1.547681684819984e-05
+Epoch 41 begin
+
+Test set: Epoch: 41, Average loss: 0.00002027
+
+min_loss: 1.547681684819984e-05
+Epoch 42 begin
+
+Test set: Epoch: 42, Average loss: 0.00002167
+
+min_loss: 1.547681684819984e-05
+Epoch 43 begin
+
+Test set: Epoch: 43, Average loss: 0.00002116
+
+min_loss: 1.547681684819984e-05
+Epoch 44 begin
+
+Test set: Epoch: 44, Average loss: 0.00001604
+
+min_loss: 1.547681684819984e-05
+Epoch 45 begin
+
+Test set: Epoch: 45, Average loss: 0.00001707
+
+min_loss: 1.547681684819984e-05
+Epoch 46 begin
+
+Test set: Epoch: 46, Average loss: 0.00001772
+
+min_loss: 1.547681684819984e-05
+Epoch 47 begin
+
+Test set: Epoch: 47, Average loss: 0.00002093
+
+min_loss: 1.547681684819984e-05
+Epoch 48 begin
+
+Test set: Epoch: 48, Average loss: 0.00001811
+
+min_loss: 1.547681684819984e-05
+Epoch 49 begin
+
+Test set: Epoch: 49, Average loss: 0.00001747
+
+min_loss: 1.547681684819984e-05
+Epoch 50 begin
+
+Test set: Epoch: 50, Average loss: 0.00001608
+
+min_loss: 1.547681684819984e-05
+Epoch 51 begin
+
+Test set: Epoch: 51, Average loss: 0.00001667
+
+min_loss: 1.547681684819984e-05
+Epoch 52 begin
+
+Test set: Epoch: 52, Average loss: 0.00001683
+
+min_loss: 1.547681684819984e-05
+Epoch 53 begin
+
+Test set: Epoch: 53, Average loss: 0.00002065
+
+min_loss: 1.547681684819984e-05
+Epoch 54 begin
+
+Test set: Epoch: 54, Average loss: 0.00001949
+
+min_loss: 1.547681684819984e-05
+Epoch 55 begin
+
+Test set: Epoch: 55, Average loss: 0.00001496
+
+save
+min_loss: 1.4964365447217487e-05
+Epoch 56 begin
+
+Test set: Epoch: 56, Average loss: 0.00001575
+
+min_loss: 1.4964365447217487e-05
+Epoch 57 begin
+
+Test set: Epoch: 57, Average loss: 0.00002172
+
+min_loss: 1.4964365447217487e-05
+Epoch 58 begin
+
+Test set: Epoch: 58, Average loss: 0.00001778
+
+min_loss: 1.4964365447217487e-05
+Epoch 59 begin
+
+Test set: Epoch: 59, Average loss: 0.00001647
+
+min_loss: 1.4964365447217487e-05
+Epoch 60 begin
+
+Test set: Epoch: 60, Average loss: 0.00001815
+
+min_loss: 1.4964365447217487e-05
+Epoch 61 begin
+
+Test set: Epoch: 61, Average loss: 0.00002069
+
+min_loss: 1.4964365447217487e-05
+Epoch 62 begin
+
+Test set: Epoch: 62, Average loss: 0.00001930
+
+min_loss: 1.4964365447217487e-05
+Epoch 63 begin
+
+Test set: Epoch: 63, Average loss: 0.00001963
+
+min_loss: 1.4964365447217487e-05
+Epoch 64 begin
+
+Test set: Epoch: 64, Average loss: 0.00001442
+
+save
+min_loss: 1.4422498979034607e-05
+Epoch 65 begin
+
+Test set: Epoch: 65, Average loss: 0.00001735
+
+min_loss: 1.4422498979034607e-05
+Epoch 66 begin
+
+Test set: Epoch: 66, Average loss: 0.00001790
+
+min_loss: 1.4422498979034607e-05
+Epoch 67 begin
+
+Test set: Epoch: 67, Average loss: 0.00001786
+
+min_loss: 1.4422498979034607e-05
+Epoch 68 begin
+
+Test set: Epoch: 68, Average loss: 0.00001780
+
+min_loss: 1.4422498979034607e-05
+Epoch 69 begin
+
+Test set: Epoch: 69, Average loss: 0.00001970
+
+min_loss: 1.4422498979034607e-05
+Epoch 70 begin
+
+Test set: Epoch: 70, Average loss: 0.00001913
+
+min_loss: 1.4422498979034607e-05
+Epoch 71 begin
+
+Test set: Epoch: 71, Average loss: 0.00001529
+
+min_loss: 1.4422498979034607e-05
+Epoch 72 begin
+
+Test set: Epoch: 72, Average loss: 0.00001681
+
+min_loss: 1.4422498979034607e-05
+Epoch 73 begin
+
+Test set: Epoch: 73, Average loss: 0.00001703
+
+min_loss: 1.4422498979034607e-05
+Epoch 74 begin
+
+Test set: Epoch: 74, Average loss: 0.00001693
+
+min_loss: 1.4422498979034607e-05
+Epoch 75 begin
+
+Test set: Epoch: 75, Average loss: 0.00001852
+
+min_loss: 1.4422498979034607e-05
+Epoch 76 begin
+
+Test set: Epoch: 76, Average loss: 0.00001633
+
+min_loss: 1.4422498979034607e-05
+Epoch 77 begin
+
+Test set: Epoch: 77, Average loss: 0.00001571
+
+min_loss: 1.4422498979034607e-05
+Epoch 78 begin
+
+Test set: Epoch: 78, Average loss: 0.00001777
+
+min_loss: 1.4422498979034607e-05
+Epoch 79 begin
+
+Test set: Epoch: 79, Average loss: 0.00001979
+
+min_loss: 1.4422498979034607e-05
+Epoch 80 begin
+
+Test set: Epoch: 80, Average loss: 0.00001687
+
+min_loss: 1.4422498979034607e-05
+Epoch 81 begin
+
+Test set: Epoch: 81, Average loss: 0.00001827
+
+min_loss: 1.4422498979034607e-05
+Epoch 82 begin
+
+Test set: Epoch: 82, Average loss: 0.00001997
+
+min_loss: 1.4422498979034607e-05
+Epoch 83 begin
+
+Test set: Epoch: 83, Average loss: 0.00001683
+
+min_loss: 1.4422498979034607e-05
+Epoch 84 begin
+
+Test set: Epoch: 84, Average loss: 0.00001510
+
+min_loss: 1.4422498979034607e-05
+Epoch 85 begin
+
+Test set: Epoch: 85, Average loss: 0.00001530
+
+min_loss: 1.4422498979034607e-05
+Epoch 86 begin
+
+Test set: Epoch: 86, Average loss: 0.00001588
+
+min_loss: 1.4422498979034607e-05
+Epoch 87 begin
+
+Test set: Epoch: 87, Average loss: 0.00001724
+
+min_loss: 1.4422498979034607e-05
+Epoch 88 begin
+
+Test set: Epoch: 88, Average loss: 0.00001509
+
+min_loss: 1.4422498979034607e-05
+Epoch 89 begin
+
+Test set: Epoch: 89, Average loss: 0.00001864
+
+min_loss: 1.4422498979034607e-05
+Epoch 90 begin
+
+Test set: Epoch: 90, Average loss: 0.00001888
+
+min_loss: 1.4422498979034607e-05
+Epoch 91 begin
+
+Test set: Epoch: 91, Average loss: 0.00001581
+
+min_loss: 1.4422498979034607e-05
+Epoch 92 begin
+
+Test set: Epoch: 92, Average loss: 0.00001445
+
+min_loss: 1.4422498979034607e-05
+Epoch 93 begin
+
+Test set: Epoch: 93, Average loss: 0.00001649
+
+min_loss: 1.4422498979034607e-05
+Epoch 94 begin
+
+Test set: Epoch: 94, Average loss: 0.00001851
+
+min_loss: 1.4422498979034607e-05
+Epoch 95 begin
+
+Test set: Epoch: 95, Average loss: 0.00001495
+
+min_loss: 1.4422498979034607e-05
+Epoch 96 begin
+
+Test set: Epoch: 96, Average loss: 0.00001931
+
+min_loss: 1.4422498979034607e-05
+Epoch 97 begin
+
+Test set: Epoch: 97, Average loss: 0.00001413
+
+save
+min_loss: 1.413130534792009e-05
+Epoch 98 begin
+
+Test set: Epoch: 98, Average loss: 0.00001798
+
+min_loss: 1.413130534792009e-05
+Epoch 99 begin
+
+Test set: Epoch: 99, Average loss: 0.00001777
+
+min_loss: 1.413130534792009e-05
+Epoch 100 begin
+
+Test set: Epoch: 100, Average loss: 0.00001585
+
+min_loss: 1.413130534792009e-05
+Epoch 101 begin
+
+Test set: Epoch: 101, Average loss: 0.00001391
+
+save
+min_loss: 1.3906977597206747e-05
+Epoch 102 begin
+
+Test set: Epoch: 102, Average loss: 0.00001789
+
+min_loss: 1.3906977597206747e-05
+Epoch 103 begin
+
+Test set: Epoch: 103, Average loss: 0.00001629
+
+min_loss: 1.3906977597206747e-05
+Epoch 104 begin
+
+Test set: Epoch: 104, Average loss: 0.00001770
+
+min_loss: 1.3906977597206747e-05
+Epoch 105 begin
+
+Test set: Epoch: 105, Average loss: 0.00001994
+
+min_loss: 1.3906977597206747e-05
+Epoch 106 begin
+
+Test set: Epoch: 106, Average loss: 0.00001298
+
+save
+min_loss: 1.2975617850944411e-05
+Epoch 107 begin
+
+Test set: Epoch: 107, Average loss: 0.00001495
+
+min_loss: 1.2975617850944411e-05
+Epoch 108 begin
+
+Test set: Epoch: 108, Average loss: 0.00001744
+
+min_loss: 1.2975617850944411e-05
+Epoch 109 begin
+
+Test set: Epoch: 109, Average loss: 0.00001643
+
+min_loss: 1.2975617850944411e-05
+Epoch 110 begin
+
+Test set: Epoch: 110, Average loss: 0.00001861
+
+min_loss: 1.2975617850944411e-05
+Epoch 111 begin
+
+Test set: Epoch: 111, Average loss: 0.00001625
+
+min_loss: 1.2975617850944411e-05
+Epoch 112 begin
+
+Test set: Epoch: 112, Average loss: 0.00001923
+
+min_loss: 1.2975617850944411e-05
+Epoch 113 begin
+
+Test set: Epoch: 113, Average loss: 0.00001645
+
+min_loss: 1.2975617850944411e-05
+Epoch 114 begin
+
+Test set: Epoch: 114, Average loss: 0.00001376
+
+min_loss: 1.2975617850944411e-05
+Epoch 115 begin
+
+Test set: Epoch: 115, Average loss: 0.00001445
+
+min_loss: 1.2975617850944411e-05
+Epoch 116 begin
+
+Test set: Epoch: 116, Average loss: 0.00001580
+
+min_loss: 1.2975617850944411e-05
+Epoch 117 begin
+
+Test set: Epoch: 117, Average loss: 0.00001301
+
+min_loss: 1.2975617850944411e-05
+Epoch 118 begin
+
+Test set: Epoch: 118, Average loss: 0.00001599
+
+min_loss: 1.2975617850944411e-05
+Epoch 119 begin
+
+Test set: Epoch: 119, Average loss: 0.00001636
+
+min_loss: 1.2975617850944411e-05
+Epoch 120 begin
+
+Test set: Epoch: 120, Average loss: 0.00001757
+
+min_loss: 1.2975617850944411e-05
+Epoch 121 begin
+
+Test set: Epoch: 121, Average loss: 0.00001680
+
+min_loss: 1.2975617850944411e-05
+Epoch 122 begin
+
+Test set: Epoch: 122, Average loss: 0.00001251
+
+save
+min_loss: 1.2514912702365616e-05
+Epoch 123 begin
+
+Test set: Epoch: 123, Average loss: 0.00001502
+
+min_loss: 1.2514912702365616e-05
+Epoch 124 begin
+
+Test set: Epoch: 124, Average loss: 0.00001634
+
+min_loss: 1.2514912702365616e-05
+Epoch 125 begin
+
+Test set: Epoch: 125, Average loss: 0.00001653
+
+min_loss: 1.2514912702365616e-05
+Epoch 126 begin
+
+Test set: Epoch: 126, Average loss: 0.00001658
+
+min_loss: 1.2514912702365616e-05
+Epoch 127 begin
+
+Test set: Epoch: 127, Average loss: 0.00001600
+
+min_loss: 1.2514912702365616e-05
+Epoch 128 begin
+
+Test set: Epoch: 128, Average loss: 0.00001493
+
+min_loss: 1.2514912702365616e-05
+Epoch 129 begin
+
+Test set: Epoch: 129, Average loss: 0.00001477
+
+min_loss: 1.2514912702365616e-05
+Epoch 130 begin
+
+Test set: Epoch: 130, Average loss: 0.00001404
+
+min_loss: 1.2514912702365616e-05
+Epoch 131 begin
+
+Test set: Epoch: 131, Average loss: 0.00001595
+
+min_loss: 1.2514912702365616e-05
+Epoch 132 begin
+
+Test set: Epoch: 132, Average loss: 0.00001803
+
+min_loss: 1.2514912702365616e-05
+Epoch 133 begin
+
+Test set: Epoch: 133, Average loss: 0.00001166
+
+save
+min_loss: 1.1664510574476206e-05
+Epoch 134 begin
+
+Test set: Epoch: 134, Average loss: 0.00001416
+
+min_loss: 1.1664510574476206e-05
+Epoch 135 begin
+
+Test set: Epoch: 135, Average loss: 0.00001581
+
+min_loss: 1.1664510574476206e-05
+Epoch 136 begin
+
+Test set: Epoch: 136, Average loss: 0.00001517
+
+min_loss: 1.1664510574476206e-05
+Epoch 137 begin
+
+Test set: Epoch: 137, Average loss: 0.00001727
+
+min_loss: 1.1664510574476206e-05
+Epoch 138 begin
+
+Test set: Epoch: 138, Average loss: 0.00001441
+
+min_loss: 1.1664510574476206e-05
+Epoch 139 begin
+
+Test set: Epoch: 139, Average loss: 0.00001765
+
+min_loss: 1.1664510574476206e-05
+Epoch 140 begin
+
+Test set: Epoch: 140, Average loss: 0.00001581
+
+min_loss: 1.1664510574476206e-05
+Epoch 141 begin
+
+Test set: Epoch: 141, Average loss: 0.00001543
+
+min_loss: 1.1664510574476206e-05
+Epoch 142 begin
+
+Test set: Epoch: 142, Average loss: 0.00001692
+
+min_loss: 1.1664510574476206e-05
+Epoch 143 begin
+
+Test set: Epoch: 143, Average loss: 0.00001467
+
+min_loss: 1.1664510574476206e-05
+Epoch 144 begin
+
+Test set: Epoch: 144, Average loss: 0.00001328
+
+min_loss: 1.1664510574476206e-05
+Epoch 145 begin
+
+Test set: Epoch: 145, Average loss: 0.00001616
+
+min_loss: 1.1664510574476206e-05
+Epoch 146 begin
+
+Test set: Epoch: 146, Average loss: 0.00001498
+
+min_loss: 1.1664510574476206e-05
+Epoch 147 begin
+
+Test set: Epoch: 147, Average loss: 0.00001433
+
+min_loss: 1.1664510574476206e-05
+Epoch 148 begin
+
+Test set: Epoch: 148, Average loss: 0.00001379
+
+min_loss: 1.1664510574476206e-05
+Epoch 149 begin
+
+Test set: Epoch: 149, Average loss: 0.00001450
+
+min_loss: 1.1664510574476206e-05
+Epoch 150 begin
+
+Test set: Epoch: 150, Average loss: 0.00000543
+
+save
+min_loss: 5.4288988002584515e-06
+Epoch 151 begin
+
+Test set: Epoch: 151, Average loss: 0.00000555
+
+min_loss: 5.4288988002584515e-06
+Epoch 152 begin
+
+Test set: Epoch: 152, Average loss: 0.00000569
+
+min_loss: 5.4288988002584515e-06
+Epoch 153 begin
+
+Test set: Epoch: 153, Average loss: 0.00000530
+
+save
+min_loss: 5.303634500328269e-06
+Epoch 154 begin
+
+Test set: Epoch: 154, Average loss: 0.00000578
+
+min_loss: 5.303634500328269e-06
+Epoch 155 begin
+
+Test set: Epoch: 155, Average loss: 0.00000552
+
+min_loss: 5.303634500328269e-06
+Epoch 156 begin
+
+Test set: Epoch: 156, Average loss: 0.00000562
+
+min_loss: 5.303634500328269e-06
+Epoch 157 begin
+
+Test set: Epoch: 157, Average loss: 0.00000549
+
+min_loss: 5.303634500328269e-06
+Epoch 158 begin
+
+Test set: Epoch: 158, Average loss: 0.00000520
+
+save
+min_loss: 5.201901372620472e-06
+Epoch 159 begin
+
+Test set: Epoch: 159, Average loss: 0.00000568
+
+min_loss: 5.201901372620472e-06
+Epoch 160 begin
+
+Test set: Epoch: 160, Average loss: 0.00000545
+
+min_loss: 5.201901372620472e-06
+Epoch 161 begin
+
+Test set: Epoch: 161, Average loss: 0.00000517
+
+save
+min_loss: 5.165453291881272e-06
+Epoch 162 begin
+
+Test set: Epoch: 162, Average loss: 0.00000569
+
+min_loss: 5.165453291881272e-06
+Epoch 163 begin
+
+Test set: Epoch: 163, Average loss: 0.00000539
+
+min_loss: 5.165453291881272e-06
+Epoch 164 begin
+
+Test set: Epoch: 164, Average loss: 0.00000559
+
+min_loss: 5.165453291881272e-06
+Epoch 165 begin
+
+Test set: Epoch: 165, Average loss: 0.00000543
+
+min_loss: 5.165453291881272e-06
+Epoch 166 begin
+
+Test set: Epoch: 166, Average loss: 0.00000649
+
+min_loss: 5.165453291881272e-06
+Epoch 167 begin
+
+Test set: Epoch: 167, Average loss: 0.00000520
+
+min_loss: 5.165453291881272e-06
+Epoch 168 begin
+
+Test set: Epoch: 168, Average loss: 0.00000531
+
+min_loss: 5.165453291881272e-06
+Epoch 169 begin
+
+Test set: Epoch: 169, Average loss: 0.00000525
+
+min_loss: 5.165453291881272e-06
+Epoch 170 begin
+
+Test set: Epoch: 170, Average loss: 0.00000581
+
+min_loss: 5.165453291881272e-06
+Epoch 171 begin
+
+Test set: Epoch: 171, Average loss: 0.00000544
+
+min_loss: 5.165453291881272e-06
+Epoch 172 begin
+
+Test set: Epoch: 172, Average loss: 0.00000496
+
+save
+min_loss: 4.955923055318728e-06
+Epoch 173 begin
+
+Test set: Epoch: 173, Average loss: 0.00000502
+
+min_loss: 4.955923055318728e-06
+Epoch 174 begin
+
+Test set: Epoch: 174, Average loss: 0.00000554
+
+min_loss: 4.955923055318728e-06
+Epoch 175 begin
+
+Test set: Epoch: 175, Average loss: 0.00000514
+
+min_loss: 4.955923055318728e-06
+Epoch 176 begin
+
+Test set: Epoch: 176, Average loss: 0.00000555
+
+min_loss: 4.955923055318728e-06
+Epoch 177 begin
+
+Test set: Epoch: 177, Average loss: 0.00000512
+
+min_loss: 4.955923055318728e-06
+Epoch 178 begin
+
+Test set: Epoch: 178, Average loss: 0.00000512
+
+min_loss: 4.955923055318728e-06
+Epoch 179 begin
+
+Test set: Epoch: 179, Average loss: 0.00000502
+
+min_loss: 4.955923055318728e-06
+Epoch 180 begin
+
+Test set: Epoch: 180, Average loss: 0.00000483
+
+save
+min_loss: 4.829807805888449e-06
+Epoch 181 begin
+
+Test set: Epoch: 181, Average loss: 0.00000512
+
+min_loss: 4.829807805888449e-06
+Epoch 182 begin
+
+Test set: Epoch: 182, Average loss: 0.00000513
+
+min_loss: 4.829807805888449e-06
+Epoch 183 begin
+
+Test set: Epoch: 183, Average loss: 0.00000511
+
+min_loss: 4.829807805888449e-06
+Epoch 184 begin
+
+Test set: Epoch: 184, Average loss: 0.00000512
+
+min_loss: 4.829807805888449e-06
+Epoch 185 begin
+
+Test set: Epoch: 185, Average loss: 0.00000540
+
+min_loss: 4.829807805888449e-06
+Epoch 186 begin
+
+Test set: Epoch: 186, Average loss: 0.00000528
+
+min_loss: 4.829807805888449e-06
+Epoch 187 begin
+
+Test set: Epoch: 187, Average loss: 0.00000541
+
+min_loss: 4.829807805888449e-06
+Epoch 188 begin
+
+Test set: Epoch: 188, Average loss: 0.00000498
+
+min_loss: 4.829807805888449e-06
+Epoch 189 begin
+
+Test set: Epoch: 189, Average loss: 0.00000502
+
+min_loss: 4.829807805888449e-06
+Epoch 190 begin
+
+Test set: Epoch: 190, Average loss: 0.00000528
+
+min_loss: 4.829807805888449e-06
+Epoch 191 begin
+
+Test set: Epoch: 191, Average loss: 0.00000575
+
+min_loss: 4.829807805888449e-06
+Epoch 192 begin
+
+Test set: Epoch: 192, Average loss: 0.00000512
+
+min_loss: 4.829807805888449e-06
+Epoch 193 begin
+
+Test set: Epoch: 193, Average loss: 0.00000482
+
+save
+min_loss: 4.816845793398425e-06
+Epoch 194 begin
+
+Test set: Epoch: 194, Average loss: 0.00000517
+
+min_loss: 4.816845793398425e-06
+Epoch 195 begin
+
+Test set: Epoch: 195, Average loss: 0.00000496
+
+min_loss: 4.816845793398425e-06
+Epoch 196 begin
+
+Test set: Epoch: 196, Average loss: 0.00000533
+
+min_loss: 4.816845793398425e-06
+Epoch 197 begin
+
+Test set: Epoch: 197, Average loss: 0.00000516
+
+min_loss: 4.816845793398425e-06
+Epoch 198 begin
+
+Test set: Epoch: 198, Average loss: 0.00000483
+
+min_loss: 4.816845793398425e-06
+Epoch 199 begin
+
+Test set: Epoch: 199, Average loss: 0.00000472
+
+save
+min_loss: 4.715403825272998e-06
+Epoch 200 begin
+
+Test set: Epoch: 200, Average loss: 0.00000636
+
+min_loss: 4.715403825272998e-06
+Epoch 201 begin
+
+Test set: Epoch: 201, Average loss: 0.00000557
+
+min_loss: 4.715403825272998e-06
+Epoch 202 begin
+
+Test set: Epoch: 202, Average loss: 0.00000549
+
+min_loss: 4.715403825272998e-06
+Epoch 203 begin
+
+Test set: Epoch: 203, Average loss: 0.00000497
+
+min_loss: 4.715403825272998e-06
+Epoch 204 begin
+
+Test set: Epoch: 204, Average loss: 0.00000545
+
+min_loss: 4.715403825272998e-06
+Epoch 205 begin
+
+Test set: Epoch: 205, Average loss: 0.00000508
+
+min_loss: 4.715403825272998e-06
+Epoch 206 begin
+
+Test set: Epoch: 206, Average loss: 0.00000469
+
+save
+min_loss: 4.6927362893459645e-06
+Epoch 207 begin
+
+Test set: Epoch: 207, Average loss: 0.00000523
+
+min_loss: 4.6927362893459645e-06
+Epoch 208 begin
+
+Test set: Epoch: 208, Average loss: 0.00000509
+
+min_loss: 4.6927362893459645e-06
+Epoch 209 begin
+
+Test set: Epoch: 209, Average loss: 0.00000589
+
+min_loss: 4.6927362893459645e-06
+Epoch 210 begin
+
+Test set: Epoch: 210, Average loss: 0.00000481
+
+min_loss: 4.6927362893459645e-06
+Epoch 211 begin
+
+Test set: Epoch: 211, Average loss: 0.00000482
+
+min_loss: 4.6927362893459645e-06
+Epoch 212 begin
+
+Test set: Epoch: 212, Average loss: 0.00000536
+
+min_loss: 4.6927362893459645e-06
+Epoch 213 begin
+
+Test set: Epoch: 213, Average loss: 0.00000493
+
+min_loss: 4.6927362893459645e-06
+Epoch 214 begin
+
+Test set: Epoch: 214, Average loss: 0.00000523
+
+min_loss: 4.6927362893459645e-06
+Epoch 215 begin
+
+Test set: Epoch: 215, Average loss: 0.00000461
+
+save
+min_loss: 4.610211801542587e-06
+Epoch 216 begin
+
+Test set: Epoch: 216, Average loss: 0.00000497
+
+min_loss: 4.610211801542587e-06
+Epoch 217 begin
+
+Test set: Epoch: 217, Average loss: 0.00000485
+
+min_loss: 4.610211801542587e-06
+Epoch 218 begin
+
+Test set: Epoch: 218, Average loss: 0.00000569
+
+min_loss: 4.610211801542587e-06
+Epoch 219 begin
+
+Test set: Epoch: 219, Average loss: 0.00000570
+
+min_loss: 4.610211801542587e-06
+Epoch 220 begin
+
+Test set: Epoch: 220, Average loss: 0.00000534
+
+min_loss: 4.610211801542587e-06
+Epoch 221 begin
+
+Test set: Epoch: 221, Average loss: 0.00000514
+
+min_loss: 4.610211801542587e-06
+Epoch 222 begin
+
+Test set: Epoch: 222, Average loss: 0.00000520
+
+min_loss: 4.610211801542587e-06
+Epoch 223 begin
+
+Test set: Epoch: 223, Average loss: 0.00000563
+
+min_loss: 4.610211801542587e-06
+Epoch 224 begin
+
+Test set: Epoch: 224, Average loss: 0.00000581
+
+min_loss: 4.610211801542587e-06
+Epoch 225 begin
+
+Test set: Epoch: 225, Average loss: 0.00000575
+
+min_loss: 4.610211801542587e-06
+Epoch 226 begin
+
+Test set: Epoch: 226, Average loss: 0.00000477
+
+min_loss: 4.610211801542587e-06
+Epoch 227 begin
+
+Test set: Epoch: 227, Average loss: 0.00000518
+
+min_loss: 4.610211801542587e-06
+Epoch 228 begin
+
+Test set: Epoch: 228, Average loss: 0.00000535
+
+min_loss: 4.610211801542587e-06
+Epoch 229 begin
+
+Test set: Epoch: 229, Average loss: 0.00000502
+
+min_loss: 4.610211801542587e-06
+Epoch 230 begin
+
+Test set: Epoch: 230, Average loss: 0.00000549
+
+min_loss: 4.610211801542587e-06
+Epoch 231 begin
+
+Test set: Epoch: 231, Average loss: 0.00000504
+
+min_loss: 4.610211801542587e-06
+Epoch 232 begin
+
+Test set: Epoch: 232, Average loss: 0.00000523
+
+min_loss: 4.610211801542587e-06
+Epoch 233 begin
+
+Test set: Epoch: 233, Average loss: 0.00000543
+
+min_loss: 4.610211801542587e-06
+Epoch 234 begin
+
+Test set: Epoch: 234, Average loss: 0.00000545
+
+min_loss: 4.610211801542587e-06
+Epoch 235 begin
+
+Test set: Epoch: 235, Average loss: 0.00000539
+
+min_loss: 4.610211801542587e-06
+Epoch 236 begin
+
+Test set: Epoch: 236, Average loss: 0.00000550
+
+min_loss: 4.610211801542587e-06
+Epoch 237 begin
+
+Test set: Epoch: 237, Average loss: 0.00000490
+
+min_loss: 4.610211801542587e-06
+Epoch 238 begin
+
+Test set: Epoch: 238, Average loss: 0.00000487
+
+min_loss: 4.610211801542587e-06
+Epoch 239 begin
+
+Test set: Epoch: 239, Average loss: 0.00000499
+
+min_loss: 4.610211801542587e-06
+Epoch 240 begin
+
+Test set: Epoch: 240, Average loss: 0.00000543
+
+min_loss: 4.610211801542587e-06
+Epoch 241 begin
+
+Test set: Epoch: 241, Average loss: 0.00000493
+
+min_loss: 4.610211801542587e-06
+Epoch 242 begin
+
+Test set: Epoch: 242, Average loss: 0.00000622
+
+min_loss: 4.610211801542587e-06
+Epoch 243 begin
+
+Test set: Epoch: 243, Average loss: 0.00000500
+
+min_loss: 4.610211801542587e-06
+Epoch 244 begin
+
+Test set: Epoch: 244, Average loss: 0.00000506
+
+min_loss: 4.610211801542587e-06
+Epoch 245 begin
+
+Test set: Epoch: 245, Average loss: 0.00000494
+
+min_loss: 4.610211801542587e-06
+Epoch 246 begin
+
+Test set: Epoch: 246, Average loss: 0.00000515
+
+min_loss: 4.610211801542587e-06
+Epoch 247 begin
+
+Test set: Epoch: 247, Average loss: 0.00000501
+
+min_loss: 4.610211801542587e-06
+Epoch 248 begin
+
+Test set: Epoch: 248, Average loss: 0.00000479
+
+min_loss: 4.610211801542587e-06
+Epoch 249 begin
+
+Test set: Epoch: 249, Average loss: 0.00000488
+
+min_loss: 4.610211801542587e-06
+Epoch 250 begin
+
+Test set: Epoch: 250, Average loss: 0.00000505
+
+min_loss: 4.610211801542587e-06
+Epoch 251 begin
+
+Test set: Epoch: 251, Average loss: 0.00000533
+
+min_loss: 4.610211801542587e-06
+Epoch 252 begin
+
+Test set: Epoch: 252, Average loss: 0.00000557
+
+min_loss: 4.610211801542587e-06
+Epoch 253 begin
+
+Test set: Epoch: 253, Average loss: 0.00000497
+
+min_loss: 4.610211801542587e-06
+Epoch 254 begin
+
+Test set: Epoch: 254, Average loss: 0.00000510
+
+min_loss: 4.610211801542587e-06
+Epoch 255 begin
+
+Test set: Epoch: 255, Average loss: 0.00000484
+
+min_loss: 4.610211801542587e-06
+Epoch 256 begin
+
+Test set: Epoch: 256, Average loss: 0.00000511
+
+min_loss: 4.610211801542587e-06
+Epoch 257 begin
+
+Test set: Epoch: 257, Average loss: 0.00000457
+
+save
+min_loss: 4.568461942228659e-06
+Epoch 258 begin
+
+Test set: Epoch: 258, Average loss: 0.00000582
+
+min_loss: 4.568461942228659e-06
+Epoch 259 begin
+
+Test set: Epoch: 259, Average loss: 0.00000536
+
+min_loss: 4.568461942228659e-06
+Epoch 260 begin
+
+Test set: Epoch: 260, Average loss: 0.00000529
+
+min_loss: 4.568461942228659e-06
+Epoch 261 begin
+
+Test set: Epoch: 261, Average loss: 0.00000514
+
+min_loss: 4.568461942228659e-06
+Epoch 262 begin
+
+Test set: Epoch: 262, Average loss: 0.00000521
+
+min_loss: 4.568461942228659e-06
+Epoch 263 begin
+
+Test set: Epoch: 263, Average loss: 0.00000489
+
+min_loss: 4.568461942228659e-06
+Epoch 264 begin
+
+Test set: Epoch: 264, Average loss: 0.00000541
+
+min_loss: 4.568461942228659e-06
+Epoch 265 begin
+
+Test set: Epoch: 265, Average loss: 0.00000541
+
+min_loss: 4.568461942228659e-06
+Epoch 266 begin
+
+Test set: Epoch: 266, Average loss: 0.00000517
+
+min_loss: 4.568461942228659e-06
+Epoch 267 begin
+
+Test set: Epoch: 267, Average loss: 0.00000471
+
+min_loss: 4.568461942228659e-06
+Epoch 268 begin
+
+Test set: Epoch: 268, Average loss: 0.00000494
+
+min_loss: 4.568461942228659e-06
+Epoch 269 begin
+
+Test set: Epoch: 269, Average loss: 0.00000490
+
+min_loss: 4.568461942228659e-06
+Epoch 270 begin
+
+Test set: Epoch: 270, Average loss: 0.00000531
+
+min_loss: 4.568461942228659e-06
+Epoch 271 begin
+
+Test set: Epoch: 271, Average loss: 0.00000464
+
+min_loss: 4.568461942228659e-06
+Epoch 272 begin
+
+Test set: Epoch: 272, Average loss: 0.00000517
+
+min_loss: 4.568461942228659e-06
+Epoch 273 begin
+
+Test set: Epoch: 273, Average loss: 0.00000512
+
+min_loss: 4.568461942228659e-06
+Epoch 274 begin
+
+Test set: Epoch: 274, Average loss: 0.00000509
+
+min_loss: 4.568461942228659e-06
+Epoch 275 begin
+
+Test set: Epoch: 275, Average loss: 0.00000490
+
+min_loss: 4.568461942228659e-06
+Epoch 276 begin
+
+Test set: Epoch: 276, Average loss: 0.00000511
+
+min_loss: 4.568461942228659e-06
+Epoch 277 begin
+
+Test set: Epoch: 277, Average loss: 0.00000502
+
+min_loss: 4.568461942228659e-06
+Epoch 278 begin
+
+Test set: Epoch: 278, Average loss: 0.00000536
+
+min_loss: 4.568461942228659e-06
+Epoch 279 begin
+
+Test set: Epoch: 279, Average loss: 0.00000510
+
+min_loss: 4.568461942228659e-06
+Epoch 280 begin
+
+Test set: Epoch: 280, Average loss: 0.00000558
+
+min_loss: 4.568461942228659e-06
+Epoch 281 begin
+
+Test set: Epoch: 281, Average loss: 0.00000509
+
+min_loss: 4.568461942228659e-06
+Epoch 282 begin
+
+Test set: Epoch: 282, Average loss: 0.00000501
+
+min_loss: 4.568461942228659e-06
+Epoch 283 begin
+
+Test set: Epoch: 283, Average loss: 0.00000492
+
+min_loss: 4.568461942228659e-06
+Epoch 284 begin
+
+Test set: Epoch: 284, Average loss: 0.00000515
+
+min_loss: 4.568461942228659e-06
+Epoch 285 begin
+
+Test set: Epoch: 285, Average loss: 0.00000460
+
+min_loss: 4.568461942228659e-06
+Epoch 286 begin
+
+Test set: Epoch: 286, Average loss: 0.00000477
+
+min_loss: 4.568461942228659e-06
+Epoch 287 begin
+
+Test set: Epoch: 287, Average loss: 0.00000445
+
+save
+min_loss: 4.451526378417822e-06
+Epoch 288 begin
+
+Test set: Epoch: 288, Average loss: 0.00000523
+
+min_loss: 4.451526378417822e-06
+Epoch 289 begin
+
+Test set: Epoch: 289, Average loss: 0.00000558
+
+min_loss: 4.451526378417822e-06
+Epoch 290 begin
+
+Test set: Epoch: 290, Average loss: 0.00000557
+
+min_loss: 4.451526378417822e-06
+Epoch 291 begin
+
+Test set: Epoch: 291, Average loss: 0.00000472
+
+min_loss: 4.451526378417822e-06
+Epoch 292 begin
+
+Test set: Epoch: 292, Average loss: 0.00000523
+
+min_loss: 4.451526378417822e-06
+Epoch 293 begin
+
+Test set: Epoch: 293, Average loss: 0.00000486
+
+min_loss: 4.451526378417822e-06
+Epoch 294 begin
+
+Test set: Epoch: 294, Average loss: 0.00000504
+
+min_loss: 4.451526378417822e-06
+Epoch 295 begin
+
+Test set: Epoch: 295, Average loss: 0.00000485
+
+min_loss: 4.451526378417822e-06
+Epoch 296 begin
+
+Test set: Epoch: 296, Average loss: 0.00000535
+
+min_loss: 4.451526378417822e-06
+Epoch 297 begin
+
+Test set: Epoch: 297, Average loss: 0.00000502
+
+min_loss: 4.451526378417822e-06
+Epoch 298 begin
+
+Test set: Epoch: 298, Average loss: 0.00000523
+
+min_loss: 4.451526378417822e-06
+Epoch 299 begin
+
+Test set: Epoch: 299, Average loss: 0.00000480
+
+min_loss: 4.451526378417822e-06
+Epoch 300 begin
+
+Test set: Epoch: 300, Average loss: 0.00000520
+
+min_loss: 4.451526378417822e-06
+Epoch 301 begin
+
+Test set: Epoch: 301, Average loss: 0.00000515
+
+min_loss: 4.451526378417822e-06
+Epoch 302 begin
+
+Test set: Epoch: 302, Average loss: 0.00000509
+
+min_loss: 4.451526378417822e-06
+Epoch 303 begin
+
+Test set: Epoch: 303, Average loss: 0.00000507
+
+min_loss: 4.451526378417822e-06
+Epoch 304 begin
+
+Test set: Epoch: 304, Average loss: 0.00000484
+
+min_loss: 4.451526378417822e-06
+Epoch 305 begin
+
+Test set: Epoch: 305, Average loss: 0.00000483
+
+min_loss: 4.451526378417822e-06
+Epoch 306 begin
+
+Test set: Epoch: 306, Average loss: 0.00000528
+
+min_loss: 4.451526378417822e-06
+Epoch 307 begin
+
+Test set: Epoch: 307, Average loss: 0.00000490
+
+min_loss: 4.451526378417822e-06
+Epoch 308 begin
+
+Test set: Epoch: 308, Average loss: 0.00000469
+
+min_loss: 4.451526378417822e-06
+Epoch 309 begin
+
+Test set: Epoch: 309, Average loss: 0.00000504
+
+min_loss: 4.451526378417822e-06
+Epoch 310 begin
+
+Test set: Epoch: 310, Average loss: 0.00000534
+
+min_loss: 4.451526378417822e-06
+Epoch 311 begin
+
+Test set: Epoch: 311, Average loss: 0.00000500
+
+min_loss: 4.451526378417822e-06
+Epoch 312 begin
+
+Test set: Epoch: 312, Average loss: 0.00000486
+
+min_loss: 4.451526378417822e-06
+Epoch 313 begin
+
+Test set: Epoch: 313, Average loss: 0.00000459
+
+min_loss: 4.451526378417822e-06
+Epoch 314 begin
+
+Test set: Epoch: 314, Average loss: 0.00000496
+
+min_loss: 4.451526378417822e-06
+Epoch 315 begin
+
+Test set: Epoch: 315, Average loss: 0.00000467
+
+min_loss: 4.451526378417822e-06

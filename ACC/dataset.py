@@ -27,9 +27,10 @@ class critical_data(Dataset):
             with open(os.path.join(self.data_path,'Uin_{}.json'.format(idx)), 'r') as file:
                 data = json.load(file)
                 data_V = torch.tensor(data['Uin_V'],dtype=torch.float32)
-                row = torch.tensor(data['Uin_C'][:][0]) - 1
-                col = torch.tensor(data['Uin_C'][:][1]) - 1
-                C_value = torch.tensor(data['Uin_C'][:][2],dtype=torch.float32)
+                data_C = torch.tensor(data['Uin_C'])
+                row = torch.tensor(data_C[:,0]) - 1
+                col = torch.tensor(data_C[:,1]) - 1
+                C_value = torch.tensor(data_C[:,2],dtype=torch.float32)
                 data_C_d = torch.zeros(323,164,dtype=torch.float32)
                 data_C_d[row,col] = C_value
                 data_C_d[:,163] = torch.tensor(data['Uin_d'],dtype=torch.float32)
@@ -40,9 +41,10 @@ class critical_data(Dataset):
             with open(os.path.join(self.append_data_path,'Uin_{}.json'.format(idx)), 'r') as file:
                 data = json.load(file)
                 data_V = torch.tensor(data['Uin_V'],dtype=torch.float32)
-                row = torch.tensor(data['Uin_C'][:][0]) - 1
-                col = torch.tensor(data['Uin_C'][:][1]) - 1
-                C_value = torch.tensor(data['Uin_C'][:][2],dtype=torch.float32)
+                data_C = torch.tensor(data['Uin_C'])
+                row = torch.tensor(data_C[:,0]) - 1
+                col = torch.tensor(data_C[:,1]) - 1
+                C_value = torch.tensor(data_C[:,2],dtype=torch.float32)
                 data_C_d = torch.zeros(323,164,dtype=torch.float32)
                 data_C_d[row,col] = C_value
                 data_C_d[:,163] = torch.tensor(data['Uin_d'],dtype=torch.float32)
